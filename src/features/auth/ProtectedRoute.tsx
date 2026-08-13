@@ -11,6 +11,6 @@ export function ProtectedRoute() {
     if (status === "Awaiting MFA") {
         return <Navigate to="/mfa" replace/>
     }
-    
+    // Fallback for authenticated users back to child route
     return <Outlet/>
 }
