@@ -28,7 +28,7 @@ export const authSlice = createSlice({
             state.otp = generateOtp()
             state.status = "Awaiting MFA"
         },
-    // No payload needed, handled in reducer before
+    // No payload needed, handled in component before
         verifiedMfaSuccess: (state) => {
             state.user = state.pendingUser
             state.pendingUser = null
