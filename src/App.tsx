@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 import { LoginPage } from './routes/LoginPage'
-import { SignupPage } from './routes/SignUpPage'
+import { SignupPage } from './routes/SignupPage'
 import { MfaPage } from './routes/MfaPage'
 import { ProtectedRoute } from './features/auth/ProtectedRoute'
 import { DashboardPage } from './routes/DashboardPage'
