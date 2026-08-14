@@ -2,7 +2,8 @@
 
 ## Live Demo
 
-_TODO: add link/recording._
+[Watch the demo](https://drive.google.com/file/d/1jApmdFxtoDHFH87o8G3R_dITDVkgbjMt/view?usp=sharing)
+
 
 ## Features
 - **Signup** — user signs up with name, email, and password (UI-only, see [Known Limitations](#known-limitations))
