@@ -7,6 +7,7 @@ import { MemoryRouter } from 'react-router-dom'
 import { LoginPage } from './LoginPage'
 import authReducer from '@/features/auth/authSlice'
 
+// Preload state to login page
 function renderLogin() {
     const store = configureStore({ reducer: { auth: authReducer } })
     render(
@@ -26,7 +27,7 @@ describe('LoginPage', () => {
         await user.type(screen.getByLabelText(/email/i), 'admin123@gmail.com')
         await user.type(screen.getByLabelText(/password/i), 'wrong-password')
         await user.click(screen.getByRole('button', { name: /login/i }))
-
+        // Testing to see invalid email or password correctly displays in login page
         expect(await screen.findByText(/invalid email or password/i)).toBeInTheDocument()
     })
 })
