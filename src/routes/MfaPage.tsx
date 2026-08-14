@@ -15,10 +15,9 @@ export function MfaPage() {
     const [code, setCode] = useState('')
     const [error, setError] = useState<string | null>(null)
 
-    if (status !== 'Awaiting MFA') {
+    if (status === 'unauthenticated') {
         return <Navigate to="/login" replace />
     }
-
     function handleVerify() {
         if (code === otp) {
             dispatch(verifiedMfaSuccess())
